@@ -170,7 +170,7 @@ nav a[href*='work'] span:nth-of-type(9) {-webkit-transform:rotate(236deg);}
 		var twelveDevsNavProto = Object.create(HTMLElement.prototype);
 
 		twelveDevsNavProto.createdCallback = function() {
-			var logoTemplate = document.querySelector('#twelve-devs-nav');
+			var logoTemplate = document.querySelector('template');
 			var logoContent = logoTemplate.content.cloneNode(true);
 			var shadowRoot = this.webkitCreateShadowRoot();
 			shadowRoot.appendChild(logoContent);
