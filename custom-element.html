@@ -12,95 +12,118 @@
 
 	<template id="twelve-devs-nav">
 		<style>
-div, nav, h1, audio {margin:0px;padding:0px;outline:none;border:none;font-family:sans-serif;}
-.twelve-devs-nav {
-	position:relative;
-	width:300px; height:300px;
-	background-color:white;
-}
-.badge-outer {
-	width:300px; height:300px;
-}
-.badge-outer b {
-	display:block;
-	position:absolute; top:20px; left:50%;
-	width:150px; height:260px;
-	margin-left:-75px;
-	background-color: dimgrey;
-  transform-origin: center center 0 50%;
-  transform: rotate(0deg);
-}
-.badge-outer b:nth-of-type(2) {-webkit-transform: rotate(30deg);}
-.badge-outer b:nth-of-type(3) {-webkit-transform: rotate(60deg);}
-.badge-outer b:nth-of-type(4) {-webkit-transform: rotate(90deg);}
-.badge-outer b:nth-of-type(5) {-webkit-transform: rotate(120deg);}
-.badge-outer b:nth-of-type(6) {-webkit-transform: rotate(150deg);}
-.badge-outer b:nth-of-type(7) {-webkit-transform: rotate(180deg);}
-.badge-outer b:nth-of-type(8) {-webkit-transform: rotate(210deg);}
-.badge-outer b:nth-of-type(9) {-webkit-transform: rotate(240deg);}
-.badge-outer b:nth-of-type(10) {-webkit-transform: rotate(270deg);}
-.badge-outer b:nth-of-type(11) {-webkit-transform: rotate(330deg);}
+			div, nav, h1, audio {margin:0px;padding:0px;outline:none;border:none;font-family:sans-serif;}
+			.twelve-devs-nav {
+				position:relative;
+				width:300px; height:300px;
+				background-color:white;
+			}
+			.badge-outer {
+				width:300px; height:300px;
+			}
+			.badge-outer b {
+				display:block;
+				position:absolute; top:20px; left:50%;
+				width:150px; height:260px;
+				margin-left:-75px;
+				background-color:#4a4a4a;
+			  transform-origin: center center 0 50%;
+			  transform: rotate(0deg);
+			}
+			.badge-outer b:nth-of-type(2) {-webkit-transform: rotate(30deg);}
+			.badge-outer b:nth-of-type(3) {-webkit-transform: rotate(60deg);}
+			.badge-outer b:nth-of-type(4) {-webkit-transform: rotate(90deg);}
+			.badge-outer b:nth-of-type(5) {-webkit-transform: rotate(120deg);}
+			.badge-outer b:nth-of-type(6) {-webkit-transform: rotate(150deg);}
+			.badge-outer b:nth-of-type(7) {-webkit-transform: rotate(180deg);}
+			.badge-outer b:nth-of-type(8) {-webkit-transform: rotate(210deg);}
+			.badge-outer b:nth-of-type(9) {-webkit-transform: rotate(240deg);}
+			.badge-outer b:nth-of-type(10) {-webkit-transform: rotate(270deg);}
+			.badge-outer b:nth-of-type(11) {-webkit-transform: rotate(330deg);}
 
-nav {
-	position:absolute; top:25px; left:25px;
-	background:white;
-	height:250px; width:250px;
-	border-radius:125px;
-}
-nav a {
-	font-size:0.9em; font-weight:bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	color:dimgrey;
-	
-}
-nav a span {
-	position:absolute; top:125px; left:122px;
-	height:15px; width:10px;
-	padding-top:94px;
-	text-align:center;
-	-webkit-transform-origin:top center;
-}
-nav a[href*='home'] {font-size: 0.7em;}
-nav a[href*='home'] span {
-	bottom:0px; right:0px;
-	padding-top:98px;
-}
-nav a[href*='home'] span:nth-of-type(1) {-webkit-transform:rotate(36deg);}
-nav a[href*='home'] span:nth-of-type(2) {-webkit-transform:rotate(30deg);}
-nav a[href*='home'] span:nth-of-type(3) {-webkit-transform:rotate(24deg);}
-nav a[href*='home'] span:nth-of-type(4) {-webkit-transform:rotate(18deg);}
-nav a[href*='home'] span:nth-of-type(5) {-webkit-transform:rotate(12deg);}
-nav a[href*='home'] span:nth-of-type(6) {-webkit-transform:rotate(6deg);}
-nav a[href*='home'] span:nth-of-type(7) {-webkit-transform:rotate(0deg);}
-nav a[href*='home'] span:nth-of-type(8) {-webkit-transform:rotate(-6deg);}
-nav a[href*='home'] span:nth-of-type(9) {-webkit-transform:rotate(-12deg);}
-nav a[href*='home'] span:nth-of-type(10) {-webkit-transform:rotate(-18deg);}
-nav a[href*='home'] span:nth-of-type(11) {-webkit-transform:rotate(-24deg);}
-nav a[href*='home'] span:nth-of-type(12) {-webkit-transform:rotate(-30deg);}
+			nav {
+				position:absolute; top:25px; left:25px;
+				background:white;
+				height:250px; width:250px;
+				border-radius:125px;
+			}
+			nav a {
+				font-size:0.9em; font-weight:bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				color:#4a4a4a;
+			}
+			nav a:hover {font-size:1em; color:crimson;}
+			nav a span {
+				position:absolute; top:125px; left:117px;
+				height:15px; width:20px;
+				padding-top:94px;
+				text-align:center;
+				-webkit-transform-origin:top center;
+			}
+			nav a[href*='home'] {font-size: 0.7em;}
+			nav a[href*='home']:hover {font-size: 0.8em; color:crimson;}
+			nav a[href*='home'] span {
+				bottom:0px; right:0px;
+				padding-top:98px;
+			}
+			nav a[href*='home'] span:nth-of-type(1) {-webkit-transform:rotate(36deg);}
+			nav a[href*='home'] span:nth-of-type(2) {-webkit-transform:rotate(30deg);}
+			nav a[href*='home'] span:nth-of-type(3) {-webkit-transform:rotate(24deg);}
+			nav a[href*='home'] span:nth-of-type(4) {-webkit-transform:rotate(18deg);}
+			nav a[href*='home'] span:nth-of-type(5) {-webkit-transform:rotate(12deg);}
+			nav a[href*='home'] span:nth-of-type(6) {-webkit-transform:rotate(6deg);}
+			nav a[href*='home'] span:nth-of-type(7) {-webkit-transform:rotate(0deg);}
+			nav a[href*='home'] span:nth-of-type(8) {-webkit-transform:rotate(-6deg);}
+			nav a[href*='home'] span:nth-of-type(9) {-webkit-transform:rotate(-12deg);}
+			nav a[href*='home'] span:nth-of-type(10) {-webkit-transform:rotate(-18deg);}
+			nav a[href*='home'] span:nth-of-type(11) {-webkit-transform:rotate(-24deg);}
+			nav a[href*='home'] span:nth-of-type(12) {-webkit-transform:rotate(-30deg);}
 
-nav a[href*='work'] span:nth-of-type(1) {-webkit-transform:rotate(300deg);}
-nav a[href*='work'] span:nth-of-type(2) {-webkit-transform:rotate(292deg);}
-nav a[href*='work'] span:nth-of-type(3) {-webkit-transform:rotate(284deg);}
-nav a[href*='work'] span:nth-of-type(4) {-webkit-transform:rotate(276deg);}
-nav a[href*='work'] span:nth-of-type(5) {-webkit-transform:rotate(268deg);}
-nav a[href*='work'] span:nth-of-type(6) {-webkit-transform:rotate(260deg);}
-nav a[href*='work'] span:nth-of-type(7) {-webkit-transform:rotate(252deg);}
-nav a[href*='work'] span:nth-of-type(8) {-webkit-transform:rotate(244deg);}
-nav a[href*='work'] span:nth-of-type(9) {-webkit-transform:rotate(236deg);}
+			nav a[href*='work'] span:nth-of-type(1) {-webkit-transform:rotate(300deg);}
+			nav a[href*='work'] span:nth-of-type(2) {-webkit-transform:rotate(292deg);}
+			nav a[href*='work'] span:nth-of-type(3) {-webkit-transform:rotate(284deg);}
+			nav a[href*='work'] span:nth-of-type(4) {-webkit-transform:rotate(276deg);}
+			nav a[href*='work'] span:nth-of-type(5) {-webkit-transform:rotate(268deg);}
+			nav a[href*='work'] span:nth-of-type(6) {-webkit-transform:rotate(260deg);}
+			nav a[href*='work'] span:nth-of-type(7) {-webkit-transform:rotate(252deg);}
+			nav a[href*='work'] span:nth-of-type(8) {-webkit-transform:rotate(244deg);}
+			nav a[href*='work'] span:nth-of-type(9) {-webkit-transform:rotate(236deg);}
 
-.badge-inner {
-	position:absolute; top:68px; left:68px;
-	height:165px; width:165px;
-	background: dimgrey;
-	border-radius:90px;
-}
-.badge-inner h1 {
-	padding:8px 0px 0px 10px;
-	font-size:8em;
-	color:white;
-	letter-spacing: -12px;
-}
+			nav a[href*='art'] span:nth-of-type(1) {-webkit-transform:rotate(220deg);}
+			nav a[href*='art'] span:nth-of-type(2) {-webkit-transform:rotate(212deg);}
+			nav a[href*='art'] span:nth-of-type(3) {-webkit-transform:rotate(204deg);}
+			nav a[href*='art'] span:nth-of-type(4) {-webkit-transform:rotate(196deg);}
+			nav a[href*='art'] span:nth-of-type(5) {-webkit-transform:rotate(188deg);}
+			nav a[href*='art'] span:nth-of-type(6) {-webkit-transform:rotate(180deg);}
+			nav a[href*='art'] span:nth-of-type(7) {-webkit-transform:rotate(172deg);}
+			nav a[href*='art'] span:nth-of-type(8) {-webkit-transform:rotate(164deg);}
+
+			nav a[href*='eve'] span:nth-of-type(1) {-webkit-transform:rotate(148deg);}
+			nav a[href*='eve'] span:nth-of-type(2) {-webkit-transform:rotate(140deg);}
+			nav a[href*='eve'] span:nth-of-type(3) {-webkit-transform:rotate(132deg);}
+			nav a[href*='eve'] span:nth-of-type(4) {-webkit-transform:rotate(124deg);}
+			nav a[href*='eve'] span:nth-of-type(5) {-webkit-transform:rotate(116deg);}
+			nav a[href*='eve'] span:nth-of-type(6) {-webkit-transform:rotate(108deg);}
+
+			nav a[href*='talk'] span:nth-of-type(1) {-webkit-transform:rotate(92deg);}
+			nav a[href*='talk'] span:nth-of-type(2) {-webkit-transform:rotate(86deg);}
+			nav a[href*='talk'] span:nth-of-type(3) {-webkit-transform:rotate(78deg);}
+			nav a[href*='talk'] span:nth-of-type(4) {-webkit-transform:rotate(70deg);}
+			nav a[href*='talk'] span:nth-of-type(5) {-webkit-transform:rotate(62deg);}
+
+			.badge-inner {
+				position:absolute; top:68px; left:68px;
+				height:165px; width:165px;
+				background: #4a4a4a;
+				border-radius:90px;
+			}
+			.badge-inner h1 {
+				padding:12px 0px 0px 15px;
+				font-size:7.6em;
+				color:white;
+				letter-spacing: -12px;
+			}
 
 		</style>
 		<div class="twelve-devs-nav">
